@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+double fahr;
+double result1;
+double convertion(double val)
+{
+	
+	result1 = (fahr - 32) * 0.5556;
+	return result1;
+
+}
+
+int main(int argc, char** argv)
+{
+	double a;
+	double answer;
+
+	cout << "Please input temperature in degrees fahrenheit: " << endl;
+	cin >> fahr;
+	
+	
+	cout << "Fahrenheit: " << fahr << " is " << result1 << " Celsius" << endl;
+
+	system("Pause");
+
+
+}
+
+____________________________________________________________________________________ OR_
+
+
+#include <iostream>
+
+using namespace std;
+
+
+
+double convertion(double val)
+{
+	double result1;
+	result1 = (val - 32) * 0.5556;
+	return result1;
+
+}
+
+int main(int argc, char** argv)
+{
+	double fahr;
+	double answer;
+
+	cout << "Please input temperature in degrees fahrenheit: " << endl;
+	cin >> fahr;
+	answer = convertion(fahr);
+	
+	cout << "Fahrenheit: " << fahr << " is " << answer << " Celsius" << endl;
+
+	system("Pause");
+
+
+}

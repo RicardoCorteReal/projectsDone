@@ -1,0 +1,25 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include "Exercise 1.h"
+using namespace std;
+
+float timestwo(float val)
+{
+	float twice;
+	twice = 2.0*val;
+	return twice;
+}
+
+int main(int argc, char** argv)
+{
+	float a = 0;
+	float answer = 0;
+
+	cout << "Enter a value" << endl;
+	cin >> a;
+	answer = timestwo(a);
+
+	cout << "The result of function call is: " << answer << endl;
+	system("Pause");
+}

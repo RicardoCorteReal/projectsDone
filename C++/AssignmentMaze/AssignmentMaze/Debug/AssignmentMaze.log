@@ -1,0 +1,6 @@
+﻿  FileReader.cpp
+  MainClass.cpp
+  Room.cpp
+  Generating Code...
+c:\users\ricar\source\repos\assignmentmaze\assignmentmaze\room.cpp(147): warning C4715: 'Room::getRoomExit': not all control paths return a value
+  AssignmentMaze.vcxproj -> C:\Users\ricar\source\repos\AssignmentMaze\Debug\AssignmentMaze.exe

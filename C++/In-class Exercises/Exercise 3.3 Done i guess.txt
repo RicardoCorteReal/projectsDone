@@ -1,0 +1,57 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+
+using namespace std;
+
+
+class City
+{
+	char name[2];
+	char popSize[2];
+
+public:
+
+	City(char input[])
+	{
+		strcpy_s(name, input);
+		strcpy_s(popSize, input);
+	}
+
+	char* getName()
+	{
+		return name;
+	}
+
+	void setPopn(int size)
+	{
+		cout << "City has: " << getPopn() << endl;
+	}
+
+	char* getPopn()
+	{
+		return popSize;
+	}
+};
+
+
+int main(void)
+{
+	City* acity = new City("Cambridge");
+	cout << "City is: " << acity->getName() << endl;
+
+	City* ipswich = new City("Ipswich");
+	cout << "City is: " << ipswich->getName() << endl;
+
+	City popul("300000");
+	cout << "" << popul.getPopn() << endl;
+
+	cout << "The city " << acity->getName() << " has " << popul.getPopn() << " people living in it." << endl;
+	cout << "The city " << ipswich->getName() << " has " << popul.getPopn() << " people living in it." << endl;
+
+
+
+
+	system("Pause");
+	return 0;
+}

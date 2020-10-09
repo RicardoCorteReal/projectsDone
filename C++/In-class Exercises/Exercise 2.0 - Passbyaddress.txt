@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+template <typename T>
+
+void swap(T &x, T &y)
+{
+	cout << "x initialised to = " << x << ", y initialised to = " << y << endl;
+	T temp = x;
+	x = y;
+	y = temp;
+	cout << "x changed to = " << x << ", y changed to = " << y << endl;
+
+}
+
+int main(void)
+{
+	int a = 3;
+	int b = 4;
+	cout << "Before function call, a= " << a << ", b = " << b << endl;
+
+	swap(a, b);
+	cout << "After fucntion call, a = " << a << ",b =" << b << endl;
+
+	system("Pause");
+	return 0;
+}
